@@ -264,9 +264,7 @@ public class Application {
         	
         	updateText("\n\n I won after " + computerNumberGuesses + " guesses!");
         	
-        }
-    	
-    	else if (plusClue == 0 && minusClue == 0) {
+        }else if (plusClue == 0 && minusClue == 0) {
         	
             if(clueHistory.equals(userInput)){
             	
@@ -283,8 +281,8 @@ public class Application {
         }else if(minusClue!=0&& plusClue==0){
 
             removeFromPossibleNumbers(computerNumber, true, false);
-        }
-        else if (minusClue != 0 && plusClue != 0) {
+            
+        }else if (minusClue != 0 && plusClue != 0) {
 
             removeFromPossibleNumbers(computerNumber, true, false);
             
